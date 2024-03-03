@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: #14151a; /* Set background color */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +43,5 @@
     transform: rotate(360deg);
   }
 }
+
+
