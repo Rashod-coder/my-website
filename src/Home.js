@@ -26,6 +26,7 @@ const Home = () => {
                 <span className="cursor"></span> {/* Cursor */}
             </div>
             <h1>About me: </h1>
+            <p>Hi!</p>
         </div>
     );
 }
