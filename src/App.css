@@ -3,14 +3,14 @@
 }
 
 body {
-  background-color: #ffffff; /* Set background color */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: #ffffff; 
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden; 
 }
 
 .section {
-  min-height: 650px; /* Set minimum height for each section */
+  min-height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,14 +18,14 @@ body {
 }
 
 .home {
-  background-image: url('splash9.jpg'); /* Set the background image */
-  background-size: cover; /* Cover the entire background */
-  background-repeat: no-repeat; /* Do not repeat the background image */
-  background-position: center; /* Center the background image */
+  background-image: url('splash9.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
 
 .about {
-  background-color: #f0f0f0; /* Example background color */
+  background-color: #f0f0f0;
 }
 
 .projects {
@@ -35,3 +35,9 @@ body {
 .contact {
   background-color: #d0d0d0; /* Example background color */
 }
+
+.welcomeText{
+  margin-top: 0px;
+}
+
+
