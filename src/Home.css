@@ -1,10 +1,13 @@
 /* Home Page */
 body {
-    height: 120vh; /* Set the height to 100% of the viewport height */
+    height: 100vh; /* Set the height to 100% of the viewport height */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
-    background-color: #8bb0d1; /* Set the background color of the body */
-  }
+    background-image: url('splash9.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
   
 
 
@@ -23,7 +26,10 @@ body {
     align-items: center; 
     position: relative; /* Position the cursor relative to the banner */
     z-index: 1; /* Ensure it's below the navbar */
+    margin-bottom: 0;
+    margin-top: 1000; /* Add this line to remove top margin */
 }
+
 
 .banner h1 {
     font-size: 30px;
@@ -75,3 +81,4 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
