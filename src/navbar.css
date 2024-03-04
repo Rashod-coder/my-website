@@ -1,4 +1,4 @@
-@media (max-width: 991px) {
+@media (max-width: 600px) {
     .offcanvas {
       background-color: rgba(9, 24, 121, 0.15); /* Adjusted color value */
       backdrop-filter: blur(10px);

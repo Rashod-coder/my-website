@@ -3,7 +3,9 @@ import './Home.css'; // Import the home.css file
 
 const Home = () => {
     const [displayText, setDisplayText] = useState('');
-    const fullText = 'Welcome to My website';
+    const [aboutMeText, setAboutMeText] = useState('');
+
+    const fullText = 'Welcome to My Website';
 
     useEffect(() => {
         let currentIndex = 0;
@@ -16,17 +18,38 @@ const Home = () => {
         return () => clearInterval(interval);
     }, []);
 
+    const handleAboutMeChange = (event) => {
+        setAboutMeText(event.target.value);
+    };
+
     return (
-        <div className="body"> {/* Wrap the content with home-page class */}
+        <div className="home-page">
             <div className="banner">
-                <h1>
-                <br/>
-                {displayText}
-                </h1>
-                <span className="cursor"></span> {/* Cursor */}
+                <h1>{displayText}</h1>
+                <span className="cursor"></span>
             </div>
-            <h1>About me: </h1>
-            <p>I'm him!</p>
+            <div>
+                <h1>About Me:</h1>
+                <div
+                    className="about-textbox"
+                    
+                >
+
+                    <h1>JOOJOOJOOJOOJOOJOOJO 
+
+                        <br/>
+                        JOOJOOJOOJOOJOOJOOJO 
+
+                        <br/>
+                        JOOJOOJOOJOOJOOJOOJO 
+
+                        <br/>
+                        JOOJOOJOOJOOJOOJOOJO 
+
+                        <br/>
+                    </h1>
+                </div>
+            </div>
         </div>
     );
 }
