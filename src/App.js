@@ -17,8 +17,20 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
-        <Footer />
+        <div className='section home'>
+          <h1>Hi!</h1>
+        </div>
+        <div className="section about">
+          <h1>My Skills</h1>
+        </div>
+        <div className="section projects">
+          <h1>Projects that I have worked on & currently working on</h1>
+        </div>
+        <div className="section contact">
+          <h1>My Socials are linked below</h1>
+        </div>
       </Router>
+      <Footer />
     </div>
   );
 }

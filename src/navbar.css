@@ -1,22 +1,32 @@
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
     .offcanvas {
-      background-color: rgba(38, 51, 133, 0.15); /* Adjusted color value */
+      background-color: rgba(255, 255, 255, 0.15); /* Adjusted color value */
       backdrop-filter: blur(10px);
     }
   }
+
+  
   
  
   /* navbar.css */
   .navbar-drark-bg-transparent {
-    background-color: #2F4858 !important; 
-    box-shadow: 0px 4px 8px rgba(49, 45, 45, 0.8); 
-}
+    background-color: rgba(47, 72, 88, 0) !important; 
+  }
 
 .navbar {
     position: absolute;
     top: 0; /* Position it at the top of the page */
     width: 100%; /* Full width */
     z-index: 2; /* Ensure it's above the banner */
-    position: fixed;
+   
 }
+
+.navbar-toggler-icon {
+  color: rbed; /* Change the color to your desired color */
+}
+
+.offcanvas {
+  right: 0;
+}
+
 
