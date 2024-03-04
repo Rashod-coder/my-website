@@ -22,13 +22,13 @@ const Navbar = () => {
               {/* Navigation Links */}
               <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" style={{ color: 'black', fontSize: '25px' }} href="/">Home</a>
+                  <a className="nav-link active" aria-current="page" style={{ color: 'black', fontSize: '20px' }} href="/">Home</a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link" style={{ color: 'black', fontSize: '25px' }} href="/projects">Projects</a>
+                  <a className="nav-link" style={{ color: 'black', fontSize: '20px' }} href="/projects">Projects</a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link" style={{ color: 'black', fontSize: '25px' }} href="/contact">Contact</a>
+                  <a className="nav-link" style={{ color: 'black', fontSize: '20px' }} href="/contact">Contact</a>
                 </li>
               </ul>
             </div>

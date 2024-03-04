@@ -3,7 +3,7 @@ import './Home.css'; // Import the home.css file
 
 const Home = () => {
     const [displayText, setDisplayText] = useState('');
-    const [aboutMeText, setAboutMeText] = useState('');
+    const [aboutMeVisible, setAboutMeVisible] = useState(false); // State to control the visibility of "About me"
 
     const fullText = 'Welcome to My Website';
 
@@ -15,12 +15,13 @@ const Home = () => {
             if (currentIndex === fullText.length) clearInterval(interval);
         }, 150); // Adjust typing speed as needed
 
+        // After some delay, set aboutMeVisible to true to trigger animation
+        setTimeout(() => {
+            setAboutMeVisible(true);
+        }, 1000); // Adjust the delay as needed
+
         return () => clearInterval(interval);
     }, []);
-
-    const handleAboutMeChange = (event) => {
-        setAboutMeText(event.target.value);
-    };
 
     return (
         <div className="home-page">
@@ -28,26 +29,9 @@ const Home = () => {
                 <h1>{displayText}</h1>
                 <span className="cursor"></span>
             </div>
-            <div>
-                <h1>About Me:</h1>
-                <div
-                    className="about-textbox"
-                    
-                >
-
-                    <h1>JOOJOOJOOJOOJOOJOOJO 
-
-                        <br/>
-                        JOOJOOJOOJOOJOOJOOJO 
-
-                        <br/>
-                        JOOJOOJOOJOOJOOJOOJO 
-
-                        <br/>
-                        JOOJOOJOOJOOJOOJOOJO 
-
-                        <br/>
-                    </h1>
+            <div className={`about-section ${aboutMeVisible ? 'show' : ''}`}>
+                <div className="small-textbox">
+                    <h3>About me</h3>
                 </div>
             </div>
         </div>
