@@ -14,7 +14,7 @@
   }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0; /* Position it at the top of the page */
     width: 100%; /* Full width */
     z-index: 2; /* Ensure it's above the banner */

@@ -13,5 +13,22 @@
 
 .footer-text {
     font-size: 12px; /* Adjust the font size as needed */
-    margin: 0; /* Remove any default margin */
+    margin: 0 auto; /* Center the text horizontally */
+}
+
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the items evenly */
+    align-items: center; /* Center align the items vertically */
+}
+
+.footer-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.footer-link:hover {
+    color: inherit; /* Inherit text color on hover */
 }

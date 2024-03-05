@@ -35,7 +35,7 @@ function App() {
       } else {
         clearInterval(typingInterval);
       }
-    }, 100); // Adjust typing speed here (in milliseconds)
+    }, 50); // Adjust typing speed here (in milliseconds)
 
     return () => clearInterval(typingInterval); // Cleanup on unmount
   }, []);
