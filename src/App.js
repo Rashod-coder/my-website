@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// App.js
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -8,6 +9,19 @@ import ProjectsPage from './Projects'; // Ensure you have this component created
 import Footer from './Footer';
 
 function App() {
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (sectionRef) => {
+    if (sectionRef.current) {
+      window.scrollTo({
+        top: sectionRef.current.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
@@ -29,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
@@ -46,13 +60,13 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="section about">
+        <div ref={aboutRef} className="section about">
           <h1>My Skills</h1>
         </div>
-        <div className="section projects">
+        <div ref={projectsRef} className="section projects">
           <h1>Projects that I have worked on & currently working on</h1>
         </div>
-        <div className="section contact">
+        <div ref={contactRef} className="section contact">
           <h1>My Socials are linked below</h1>
         </div>
       </Router>
