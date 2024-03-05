@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -55,22 +54,46 @@ function App() {
               <div className='col-sm-12'>
                 <div className='align'>
                   <div className='welcomeText'>
-                  <h1 style={{ color: '#ffffff', fontSize: 40 }}>{displayText}</h1>
+                    <h1 style={{ color: '#ffffff', fontSize: 40 }}>{displayText}</h1>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
         <div ref={aboutRef} className="section about">
-        <div className='container'>
-          <div className='row'> 
-            <div className='col-sm-12'>
-              <h1 className='text-center pt- -200'>My Skills</h1>
+          <div className='container'>
+            <div className='row'> 
+              <div className='col-sm-12'>
+                <h1 className='text-center'>My Skills</h1>
+                <div className='row'> 
+                   <div className='col-sm-4'>
+                    <div className='box'> {/* Added mx-auto class to center the box */}
+                      <p>Hello! I'm</p>
+                </div>
+                
+              </div>
+            </div>
+            <div className='row'> 
+            <div className='col-sm-4 offset-sm-8'>
+                    <div className='box'> {/* Added mx-auto class to center the box */}
+                      <p>Hello! I'm</p>
+                </div>
+                
+              </div>
+            </div>
+            <div className='row'> 
+                   <div className='col-sm-4'>
+                    <div className='box'> {/* Added mx-auto class to center the box */}
+                      <p>Hello! I'm</p>
+                </div>
+                
+              </div>
             </div>
           </div>
+          </div>
+              </div>
         </div>
-      </div>
         <div ref={projectsRef} className="section projects">
           <h1>Projects that I have worked on & currently working on</h1>
         </div>

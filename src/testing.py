@@ -4,5 +4,5 @@ plays = {
     'Amadeus': 'Peter Shaffer'
 }
 
-for title, author in plays.items():  # Use the items() method to iterate over key-value pairs
+for title, author in plays.items():  
     print(author, "wrote", title)
