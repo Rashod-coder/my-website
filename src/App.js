@@ -40,7 +40,7 @@ function App() {
             <div className='row'>
               <div className='col-sm-12'>
                 <div className='welcomeText'>
-                  <h1 style={{ color: '#ffffff', fontSize: 35 }}>{displayText}</h1>
+                  <h1 style={{ color: '#ffffff', fontSize: 40 }}>{displayText}</h1>
                 </div>
               </div>
             </div>
