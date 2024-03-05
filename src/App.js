@@ -61,11 +61,11 @@ function App() {
                 <div className='row'> 
     <div className='col-sm-4'>
         <div className='box'> {/* Added mx-auto class to center the box */}
-            <p>Programmer!  </p>
+            <p style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 45, textAlign: 'center' }}>Programmer!</p>
         </div>
     </div>
     <div className='col-sm-2'>
-    <img src={require('./splash9.jpg')} alt="Image" className="img-fluid custom-image" />
+    <img src={require('./splash11.jpg')} alt="Image" className="img-fluid custom-image" />
     </div>
 </div>
               <div className='row'> 
