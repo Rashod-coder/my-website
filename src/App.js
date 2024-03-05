@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
-import HomePage from './Home'; 
-import ContactPage from './Contact';  
-import ProjectsPage from './Projects'; // Ensure you have this component created
 import Footer from './Footer';
 
 function App() {
@@ -41,20 +37,16 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      
         <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
+        
         <div className='sectionHome home'>
           <div className='container'>
             <div className='row'>
               <div className='col-sm-12'>
                 <div className='align'>
                   <div className='welcomeText'>
-                    <h1 style={{ color: '#ffffff', fontSize: 40 }}>{displayText}</h1>
+                  <h1 style={{ color: '#ffffff', fontSize: 40, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>{displayText}</h1>
                   </div>
                 </div>
               </div>
@@ -65,42 +57,40 @@ function App() {
           <div className='container'>
             <div className='row'> 
               <div className='col-sm-12'>
-                <h1 className='text-center'>My Skills</h1>
+              <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>About me</h1>
                 <div className='row'> 
-                   <div className='col-sm-4'>
-                    <div className='box'> {/* Added mx-auto class to center the box */}
-                      <p>Hello! I'm</p>
+    <div className='col-sm-4'>
+        <div className='box'> {/* Added mx-auto class to center the box */}
+            <p>Programmer!  </p>
+        </div>
+    </div>
+    <div className='col-sm-2'>
+    <img src={require('./splash9.jpg')} alt="Image" className="img-fluid custom-image" />
+    </div>
+</div>
+              <div className='row'> 
+              <div className='col-sm-4 offset-sm-8'>
+                      <div className='box'> 
+                        <p>Hello! I'm</p>
+                  </div>
+                  
                 </div>
-                
               </div>
-            </div>
-            <div className='row'> 
-            <div className='col-sm-4 offset-sm-8'>
-                    <div className='box'> {/* Added mx-auto class to center the box */}
-                      <p>Hello! I'm</p>
-                </div>
-                
-              </div>
-            </div>
-            <div className='row'> 
-                   <div className='col-sm-4'>
-                    <div className='box'> {/* Added mx-auto class to center the box */}
-                      <p>Hello! I'm</p>
-                </div>
-                
-              </div>
-            </div>
+            
+            
+              
           </div>
           </div>
               </div>
         </div>
         <div ref={projectsRef} className="section projects">
-          <h1>Projects that I have worked on & currently working on</h1>
+        <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Projects</h1>
         </div>
         <div ref={contactRef} className="section contact">
-          <h1>Contact</h1>
+        <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Contact & Socials</h1>
+
         </div>
-      </Router>
+      
       <Footer />
     </div>
   );
