@@ -49,25 +49,33 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
-        <div className='section home'>
+        <div className='sectionHome home'>
           <div className='container'>
             <div className='row'>
               <div className='col-sm-12'>
-                <div className='welcomeText'>
+                <div className='align'>
+                  <div className='welcomeText'>
                   <h1 style={{ color: '#ffffff', fontSize: 40 }}>{displayText}</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div ref={aboutRef} className="section about">
-          <h1>My Skills</h1>
         </div>
+        <div ref={aboutRef} className="section about">
+        <div className='container'>
+          <div className='row'> 
+            <div className='col-sm-12'>
+              <h1 className='text-center pt- -200'>My Skills</h1>
+            </div>
+          </div>
+        </div>
+      </div>
         <div ref={projectsRef} className="section projects">
           <h1>Projects that I have worked on & currently working on</h1>
         </div>
         <div ref={contactRef} className="section contact">
-          <h1>My Socials are linked below</h1>
+          <h1>Contact</h1>
         </div>
       </Router>
       <Footer />

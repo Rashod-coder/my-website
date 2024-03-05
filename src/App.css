@@ -13,31 +13,59 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 6, 90, 0.9); /* Adjust the values as needed */
+  border: 3px solid #000000; /* Adjust the width and color as needed */
 }
+
 
 .home {
   background-image: url('splash9.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Adjust the values as needed */
 }
 
+
 .about {
-  background-color: #f0f0f0;
+  background-color: #023e7d;
+}
+.about h1{
+  padding-top: -10px;
 }
 
 .projects {
-  background-color: #e0e0e0; /* Example background color */
+  background-color: #203fb0; 
 }
 
 .contact {
-  background-color: #d0d0d0; /* Example background color */
+  background-color: #8394a0; 
 }
 
 .welcomeText{
   margin-top: 0px;
 }
 
+.header {
+  margin-top: -600px; /* Initial position shifted up */
+  padding-top: 20px; /* Additional padding at the top */
+  color: #ffffff;
+  
+}
 
+.header.visible {
+  margin-top: 0; /* Reset the margin top to 0 when visible */
+  opacity: 1; /* Set the opacity to 1 to make it fully visible */
+}
+
+.sectionHome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 6, 90, 0.9); /* Adjust the values as needed */
+  border: 3px solid #000000; /* Adjust the width and color as needed */
+}
