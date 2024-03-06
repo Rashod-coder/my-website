@@ -35,7 +35,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: ;
+  min-height: 150vh;
 }
 .about h1{
   padding-top: -10px;
