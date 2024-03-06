@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './font.css';
+import Projects from './Projects'
 import AboutMe from './About';
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
         </div>
         <div ref={projectsRef} className="section projects">
         <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Projects</h1>
+        <Projects/>
         </div>
         <div ref={contactRef} className="section contact">
         <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Contact & Socials</h1>
