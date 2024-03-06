@@ -15,22 +15,26 @@ body {
   justify-content: center;
   
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 6, 90, 0.9); /* Adjust the values as needed */
-  border: 3px solid #000000; /* Adjust the width and color as needed */
+  box-shadow: 0 8px 20px rgba(0, 6, 90, 0.9);
+  border: 3px solid #000000; 
 }
 
 
 .home {
-  background-image: url('splash9.jpg');
+  background-image: url('splash30.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* Adjust the values as needed */
+  
 }
 
 
 .about {
-  background-color: #ffffff;
+  background-color: #384572;
+  background-image: url('splash02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .about h1{
   padding-top: -10px;
@@ -72,12 +76,18 @@ body {
 
 .box {
   background-color: #ffffff;
-  
   border-radius: 5px;
-  height: 100px;
-  margin-top: 20px;
+  height: auto; /* Change height to auto to allow the box to expand dynamically */
+  margin-top: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* You can adjust this value based on your design */
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0 auto; /* Centers the box horizontally */
+  overflow: hidden; /* Clear floats */
+  word-wrap: break-word; /* Wrap long words */
 }
+
 
 .custom-image {
   margin-top: 20px;

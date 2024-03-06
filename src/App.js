@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import './font.css';
 
 function App() {
   const aboutRef = useRef(null);
@@ -20,7 +21,7 @@ function App() {
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
-    const text = "I'm Rishit Gupta currently a Junior at Amador Valley";
+    const text = "I'm Rishit Gupta currently a Junior at Amador Valley High School";
     let index = 0;
 
     const typingInterval = setInterval(() => {
@@ -30,9 +31,9 @@ function App() {
       } else {
         clearInterval(typingInterval);
       }
-    }, 50); // Adjust typing speed here (in milliseconds)
+    }, 60); /
 
-    return () => clearInterval(typingInterval); // Cleanup on unmount
+    return () => clearInterval(typingInterval); 
   }, []);
 
   return (
@@ -57,31 +58,22 @@ function App() {
           <div className='container'>
             <div className='row'> 
               <div className='col-sm-12'>
-              <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>About me</h1>
+              <h1 className="text-center oxygen-bold">About me</h1>
                 <div className='row'> 
-    <div className='col-sm-4'>
-        <div className='box'> {/* Added mx-auto class to center the box */}
-            <p style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 45, textAlign: 'center' }}>Programmer!</p>
-        </div>
-    </div>
-    <div className='col-sm-2'>
-    <img src={require('./splash11.jpg')} alt="Image" className="img-fluid custom-image" />
-    </div>
-</div>
-              <div className='row'> 
-              <div className='col-sm-4 offset-sm-8'>
-                      <div className='box'> 
-                        <p>Hello! I'm</p>
-                  </div>
-                  
+            <div className='col-sm-12'>
+              <br/>
+              <br/>
+                <div className='box'> {/* Added mx-auto class to center the box */}
+                    <p style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 20, color: 'black' }}>I'm Rishit Gupta I'm a Junior at Amador Valley! I Intend to major in Aerospace once I graduate as I find it one of my passions. I have took summer classes which can be found on my linkdein page here  </p>
                 </div>
-              </div>
-            
-            
-              
+            </div>
+    
+
+
+            </div>
+            </div>
           </div>
           </div>
-              </div>
         </div>
         <div ref={projectsRef} className="section projects">
         <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Projects</h1>
