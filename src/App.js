@@ -22,24 +22,24 @@ function App() {
 
   const [displayText, setDisplayText] = useState('');
 
-  useEffect(() => {
-    const text = "I 'm Rishit Gupta currently a Junior at Amador Valley High School";
-    let index = 1; // Start from index 1 to skip the initial character
-  
-    // Initialize displayText with the first character of the text
-    setDisplayText(text.charAt(0));
-  
-    const typingInterval = setInterval(() => {
-      if (index < text.length) {
-        setDisplayText(prevText => prevText + text.charAt(index));
-        index++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 60); // Adjust interval timing here if needed
-  
-    return () => clearInterval(typingInterval);
-  }, []);
+useEffect(() => {
+  const text = "I 'm Rishit Gupta currently a Junior at Amador Valley High School";
+  let index = 1; // Start from index 1 to skip the initial character
+
+  // Initialize displayText with the first character of the text
+  setDisplayText(text.charAt(0));
+
+  const typingInterval = setInterval(() => {
+    if (index < text.length) {
+      setDisplayText(prevText => prevText + text.charAt(index));
+      index++;
+    } else {
+      clearInterval(typingInterval);
+    }
+  }, 60); // Adjust interval timing here if needed
+
+  return () => clearInterval(typingInterval);
+}, []);
 
   return (
     <div className="App">

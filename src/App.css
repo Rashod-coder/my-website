@@ -21,7 +21,7 @@ body {
 
 
 .home {
-  background-image: url('splash30.jpg');
+  background-image: url('splash35.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -42,7 +42,11 @@ body {
 }
 
 .projects {
-  background-color: #203fb0; 
+  background-color: #384572;
+  background-image: url('splash31.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contact {
@@ -93,8 +97,8 @@ body {
 
 .custom-image {
   margin-top: 20px;
-  width: 200px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 200px; 
+  height: auto; 
 }
 
 .about-container {
