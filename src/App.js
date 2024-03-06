@@ -31,7 +31,7 @@ function App() {
       } else {
         clearInterval(typingInterval);
       }
-    }, 60); /
+    }, 60); 
 
     return () => clearInterval(typingInterval); 
   }, []);
