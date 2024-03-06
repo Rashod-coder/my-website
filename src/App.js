@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './font.css';
+import AboutMe from './About';
 
 function App() {
   const aboutRef = useRef(null);
@@ -31,7 +32,7 @@ function App() {
       } else {
         clearInterval(typingInterval);
       }
-    }, 60); /
+    }, 60); 
 
     return () => clearInterval(typingInterval); 
   }, []);
@@ -55,25 +56,7 @@ function App() {
           </div>
         </div>
         <div ref={aboutRef} className="section about">
-          <div className='container'>
-            <div className='row'> 
-              <div className='col-sm-12'>
-              <h1 className="text-center oxygen-bold">About me</h1>
-                <div className='row'> 
-            <div className='col-sm-12'>
-              <br/>
-              <br/>
-                <div className='box'> {/* Added mx-auto class to center the box */}
-                    <p style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 20, color: 'black' }}>I'm Rishit Gupta I'm a Junior at Amador Valley! I Intend to major in Aerospace once I graduate as I find it one of my passions. I have took summer classes which can be found on my linkdein page here  </p>
-                </div>
-            </div>
-    
-
-
-            </div>
-            </div>
-          </div>
-          </div>
+        <AboutMe />
         </div>
         <div ref={projectsRef} className="section projects">
         <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Projects</h1>
