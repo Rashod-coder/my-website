@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { FaBeer } from "react-icons/fa";
 
 const ProjectsPage = () => {
   return (
@@ -62,7 +63,7 @@ const ProjectsPage = () => {
             <div className='boxProject'>
                 <div className="d-flex align-items-center">
                     <div>
-                        <h1 style={{color: '#033559'}}> DevTrex</h1>
+                        <h1 style={{color: '#033559'}}> Placeholder</h1>
                         <p style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 20, color: 'black' }}>
                           DevTrex is a business club that strives to teach students about the world of buisness, such as consulting, financial literacy, supply chain... (Website is WIP)
                         </p>
@@ -82,7 +83,7 @@ const ProjectsPage = () => {
             <div className='boxProject'>
                 <div className="d-flex align-items-center">
                     <div>
-                        <h1 style={{color: '#033559'}}> DevTrex</h1>
+                        <h1 style={{color: '#033559'}}>Placeholder</h1>
                         <p style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 20, color: 'black' }}>
                           DevTrex is a business club that strives to teach students about the world of buisness, such as consulting, financial literacy, supply chain... (Website is WIP)
                         </p>

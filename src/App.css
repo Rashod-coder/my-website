@@ -31,7 +31,7 @@ body {
 
 .about {
   background-color: #384572;
-  background-image: url('splash37.jpg');
+  background-image: url('splash40.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -42,15 +42,19 @@ body {
 }
 
 .projects {
-  background-color: #384572;
-  background-image: url('splash37.jpg');
+  
+  background-image: url('splash40.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .contact {
-  background-color: #8394a0; 
+  
+  background-image: url('splash40.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .welcomeText{
@@ -88,9 +92,9 @@ body {
   max-width: 90%;
   padding: 10px;
   border: 1px solid black;
-  margin: 0 auto; /* Centers the box horizontally */
-  overflow: hidden; /* Clear floats */
-  word-wrap: break-word; /* Wrap long words */
+  margin: 0 auto; 
+  overflow: hidden; 
+  word-wrap: break-word; 
   color: white;
 }
 
@@ -121,8 +125,26 @@ body {
   max-width: 90%;
   padding: 10px;
   border: 1px solid black;
-  margin: 0 auto; /* Centers the box horizontally */
-  overflow: hidden; /* Clear floats */
-  word-wrap: break-word; /* Wrap long words */
+  margin: 0 auto; 
+  overflow: hidden; 
+  word-wrap: break-word; 
+  color: white;
+}
+
+
+
+.boxAbout {
+  background-color: rgba(5, 0, 0, 0.059);
+  border-radius: 10px;
+  height: auto; 
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(59, 59, 59, 0.928);
+  max-width: 100%;
+  
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0 auto; 
+  overflow: hidden;
+  word-wrap: break-word; 
   color: white;
 }
