@@ -31,7 +31,7 @@ body {
 
 .about {
   background-color: #384572;
-  background-image: url('splash31.jpg');
+  background-image: url('splash37.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +43,7 @@ body {
 
 .projects {
   background-color: #384572;
-  background-image: url('splash31.jpg');
+  background-image: url('splash37.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,4 +110,19 @@ body {
 .about-container.scrolled {
   opacity: 1;
   transform: translateY(0);
+}
+
+.boxProject {
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: auto; 
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(59, 59, 59, 0.79);
+  max-width: 90%;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0 auto; /* Centers the box horizontally */
+  overflow: hidden; /* Clear floats */
+  word-wrap: break-word; /* Wrap long words */
+  color: white;
 }

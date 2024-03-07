@@ -26,7 +26,7 @@ function AboutMe() {
 
       <div className='row'> 
         <div className='col-sm-12'>
-          <h1 className="text-center oxygen-bold" style={{ color: 'black' }}>About me</h1>
+          <h1 className="text-center oxygen-bold" style={{ color: '#black' }}>About me</h1>
         </div>
       </div>
       <div className='row'>
