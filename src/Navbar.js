@@ -6,7 +6,7 @@ const Navbar = ({ scrollToSection, aboutRef, projectsRef, contactRef }) => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div className="container">
         <a href="https://rishitg.vercel.app" className='navbar-brand'>
-          <img src= './rg.png' alt="Rishit Gupta" style={{ maxWidth: '100%', maxHeight: '85px' }} />
+          <img src= './rg.png' alt="Rishit Gupta" style={{ maxWidth: '95%', maxHeight: '95px' }} />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
