@@ -193,11 +193,3 @@ body {
   display: flex;
 }
 
-.displayText {
-  opacity: 0; /* Start fully faded */
-  transition: opacity 2s ease-in-out; /* Adjusts the duration and easing of the fade-in effect */
-}
-
-.displayText.visible {
-  opacity: 1; /* End fully opaque */
-}
