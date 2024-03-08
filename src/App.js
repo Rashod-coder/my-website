@@ -50,15 +50,21 @@ useEffect(() => {
         <div className='sectionHome home'>
           <div className='container'>
             <div className='row'>
-              <div className='col-sm-4'>
-                <div className='align'>
+              <div className='col-sm-12'>
+              <div className='align' style={{ textAlign: 'center', marginTop: '-150px' }}>
                   <div className='welcomeText'>
-                  <h1 style={{ color: '#ffffff', fontSize: 40, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>{displayText}</h1>
+                  <h1 style={{ color: '#ffffff', fontSize: 43, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>{displayText}</h1>
                   </div>
+                
                 </div>
+                <h2 style={{ textAlign: 'center' }}>hieeeee</h2>
+                
               </div>
+              
             </div>
+            
           </div>
+          
         </div>
         <div ref={aboutRef} className="section about">
         <AboutMe />
