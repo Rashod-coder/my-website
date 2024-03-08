@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -21,15 +21,8 @@ function App() {
     }
   };
 
-  const [showText, setShowText] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowText(true);
-    }, 500);
-
-    return () => clearTimeout(timeout);
-  }, []);
+  // Set the displayText directly without typing animation
+  const displayText = "I 'm Rishit Gupta currently a Junior at Amador Valley High School";
 
   return (
     <div className="App">
@@ -38,9 +31,9 @@ function App() {
         <div className='container'>
           <div className='row'>
             <div className='col-sm-12'>
-              <div className={`align ${showText ? 'fade-in' : ''}`} style={{ textAlign: 'center', marginTop: '-150px' }}>
+              <div className='align' style={{ textAlign: 'center', marginTop: '-150px' }}>
                 <div className='welcomeText'>
-                  <h1 className={`fade-in-text ${showText ? 'visible' : ''}`} style={{ color: '#ffffff', fontSize: 43, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>I'm Rishit Gupta currently a Junior at Amador Valley High School</h1>
+                  <h1 style={{ color: '#ffffff', fontSize: 43, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>{displayText}</h1>
                 </div>
               </div>
               <h2 style={{ textAlign: 'center' }}>hieeeee</h2>
