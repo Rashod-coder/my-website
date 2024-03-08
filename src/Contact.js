@@ -1,13 +1,36 @@
 // Home.js
 import React from 'react';
 
+
 const ContactPage = () => {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is a placeholder for the Home Page content.</p>
-      <p>Replace this with your actual Home Page content.</p>
+    <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Socials</h1>
+    <div className='container'>
+      <div className='row justify-content-center'>
+        <div className='col-auto'>
+          <div className='equalBox'>Placeholder 1</div>
+        </div>
+        <div className='col-auto'>
+          <div className='equalBox'>Placeholder 2</div>
+        </div>
+        <div className='col-auto'>
+          <div className='equalBox'>Placeholder 3</div>
+        </div>
+        <div className='col-auto'>
+          <div className='equalBox'>Placeholder 4</div>
+        </div>
+        <div className='col-auto'>
+          <div className='equalBox'>Placeholder 5</div>
+        </div>
+        <div className='col-auto'>
+          <div className='equalBox'>Placeholder 5</div>
+        </div>
+      </div>
     </div>
+</div>
+
+
   );
 }
 

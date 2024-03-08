@@ -49,13 +49,18 @@ function AboutMe() {
         <h4 style={{ textAlign: 'left' }}>Computer Science
         <p style={{fontSize: 18, color: 'black'}}>
           <br/>
-          I'm well versed in Java and Python, I have took AP Computer Science, a Community College Course about Java.
+          I'm well versed in Java and Python, I have took AP Computer Science, a Community College Course from De Anza about Java I have been programming since 7th Grade .
         </p>
         </h4>
         <br/>
-        <h4 style={{ textAlign: 'left' }}>Outreach</h4>
+        <h4 style={{ textAlign: 'left' }}>Outreach
+        <p style={{fontSize: 18, color: 'black'}}>
+          <br/>
+          I have good skills in creating posts using Canva, outreaching to communities, I gained more experience from my non profit
+        </p>
+        </h4>
         <br/>
-        <h4 style={{ textAlign: 'left' }}>Hardware</h4>
+        <h4 style={{ textAlign: 'left' }}>Robotics</h4>
         <br/>
         <h4 style={{ textAlign: 'left' }}>Leadership</h4>
         <br/>

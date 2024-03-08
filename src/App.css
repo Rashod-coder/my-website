@@ -55,6 +55,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 50vh;
 }
 
 .welcomeText{
@@ -147,4 +148,44 @@ body {
   overflow: hidden;
   word-wrap: break-word; 
   color: white;
+}
+
+.equalBox {
+  background-color: rgba(5, 0, 0, 0.059);
+  border-radius: 10px;
+  height: 150px; /* Set the height and width to desired size */
+  width: 150px; /* Set the height and width to desired size */
+  margin: 10px; /* Add margin to create spacing */
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(59, 59, 59, 0.928);
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  word-wrap: break-word;
+  color: white;
+  transition: transform 0.1s ease-in-out; /* Add transition effect for transform */
+
+}
+
+.equalBox:hover {
+  transform: scale(1.1); /* Scale the element on hover */
+}
+
+.socialsContainer {
+  min-height: 400px;
+}
+
+.contactBox {
+  width: 335px;
+  margin: 10px; /* Adjust margin as needed */
+  background-color: rgba(5, 0, 0, 0.059);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(59, 59, 59, 0.928);
+  color: white;
+  text-align: center;
+}
+
+.container{
+  display: flex;
 }

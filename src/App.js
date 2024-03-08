@@ -5,6 +5,7 @@ import Footer from './Footer';
 import './font.css';
 import Projects from './Projects'
 import AboutMe from './About';
+import Contact from './Contact'
 
 function App() {
   const aboutRef = useRef(null);
@@ -66,8 +67,7 @@ useEffect(() => {
         <Projects/>
         </div>
         <div ref={contactRef} className="section contact">
-        <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>Place Holder</h1>
-
+        <Contact/>
         </div>
       
       <Footer />
