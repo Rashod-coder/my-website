@@ -1,12 +1,10 @@
-favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python',
-}
+spam = {'name': 'Pooka', 'age': 5}
+if 'color' not in spam:
+    spam['color'] = 'black'
 
-for k, v in favorite_languages.items():
-    print(k + "'s favorite language is " + v)
+spam = {'name': 'Pooka', 'age': 5}
+spam.setdefault('color', 'black')
+spam
+spam.setdefault('color', 'white')
 
-for person, language in favorite_languages.items():
-    print(person + "'s favorite language is " + language)
+print(spam['color'])

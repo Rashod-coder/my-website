@@ -10,13 +10,15 @@ const ContactPage = () => {
     <div className='container'>
       <div className='row justify-content-center'>
         <div className='col-auto'>
-          <div className='equalBox'>Github
+          <div className='equalBox'>Instagram
           <br/>
           
           <a href="https://github.com/Rashod-coder" target="_blank" rel="noopener noreferrer">
 
-          <img src="./github.png" alt="Github Logo" style={{ maxWidth: '80%', maxHeight: '80%' }} />
+          <img src="./instagram.png" alt="Github Logo" style={{ maxWidth: '80%', maxHeight: '80%' }} />
           </a>
+
+         
           </div>
         </div>
         <div className='col-auto'>
@@ -36,11 +38,10 @@ const ContactPage = () => {
           </div>
         </div>
         <div className='col-auto'>
-          <div className='equalBox'>Instagram
-          <br/>
+          <div className='equalBox'>Github
           <a href="https://github.com/Rashod-coder" target="_blank" rel="noopener noreferrer">
 
-          <img src="./instagram.png" alt="Github Logo" style={{ maxWidth: '90%', maxHeight: '90%' }} />
+          <img src="./github.png" alt="Github Logo" style={{ maxWidth: '80%', maxHeight: '80%' }} />
           </a>
           </div>
         </div>
