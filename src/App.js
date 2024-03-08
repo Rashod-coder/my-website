@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './font.css';
-import Projects from './Projects'
+import Projects from './Projects';
 import AboutMe from './About';
-import Contact from './Contact'
+import Contact from './Contact';
 
 function App() {
   const aboutRef = useRef(null);
@@ -21,61 +21,42 @@ function App() {
     }
   };
 
-  const [displayText, setDisplayText] = useState('');
+  const [showText, setShowText] = useState(false);
 
-useEffect(() => {
-  const text = "I 'm Rishit Gupta currently a Junior at Amador Valley High School";
-  let index = 1; // Start from index 1 to skip the initial character
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowText(true);
+    }, 500);
 
-  // Initialize displayText with the first character of the text
-  setDisplayText(text.charAt(0));
-
-  const typingInterval = setInterval(() => {
-    if (index < text.length) {
-      setDisplayText(prevText => prevText + text.charAt(index));
-      index++;
-    } else {
-      clearInterval(typingInterval);
-    }
-  }, 60); // Adjust interval timing here if needed
-
-  return () => clearInterval(typingInterval);
-}, []);
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <div className="App">
-      
-        <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
-        
-        <div className='sectionHome home'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-sm-12'>
-              <div className='align' style={{ textAlign: 'center', marginTop: '-150px' }}>
-                  <div className='welcomeText'>
-                  <h1 style={{ color: '#ffffff', fontSize: 43, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>{displayText}</h1>
-                  </div>
-                
+      <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
+      <div className='sectionHome home'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-sm-12'>
+              <div className={`align ${showText ? 'fade-in' : ''}`} style={{ textAlign: 'center', marginTop: '-150px' }}>
+                <div className='welcomeText'>
+                  <h1 className={`fade-in-text ${showText ? 'visible' : ''}`} style={{ color: '#ffffff', fontSize: 43, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>I'm Rishit Gupta currently a Junior at Amador Valley High School</h1>
                 </div>
-                <h2 style={{ textAlign: 'center' }}>hieeeee</h2>
-                
               </div>
-              
+              <h2 style={{ textAlign: 'center' }}>hieeeee</h2>
             </div>
-            
           </div>
-          
         </div>
-        <div ref={aboutRef} className="section about">
+      </div>
+      <div ref={aboutRef} className="section about">
         <AboutMe />
-        </div>
-        <div ref={projectsRef} className="section projects">
+      </div>
+      <div ref={projectsRef} className="section projects">
         <Projects/>
-        </div>
-        <div ref={contactRef} className="section contact">
+      </div>
+      <div ref={contactRef} className="section contact">
         <Contact/>
-        </div>
-      
+      </div>
       <Footer />
     </div>
   );
