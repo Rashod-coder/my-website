@@ -22,25 +22,19 @@ function App() {
   };
 
   // Set the displayText directly without typing animation
-  const displayText = "I 'm Rishit Gupta currently a Junior at Amador Valley High School";
+  const displayText = "Hi, I'm Rishit Gupta";
 
   return (
     <div className="App">
       <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
       <div className='sectionHome home'>
-        <div className='container'>
           <div className='row'>
             <div className='col-sm-12'>
-              <div className='align' style={{ textAlign: 'center', marginTop: '-150px' }}>
-                <div className='welcomeText'>
-                  <h1 style={{ color: '#ffffff', fontSize: 43, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold' }}>{displayText}</h1>
-                </div>
+            <h1 style={{ textAlign: 'center', color: '#ffffff', fontSize: 48, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', marginTop: '-150px' }}>{displayText}</h1>
               </div>
-              <h2 style={{ textAlign: 'center' }}>hieeeee</h2>
-            </div>
+              <h2 style={{ textAlign: 'center' }}>deded</h2>
           </div>
         </div>
-      </div>
       <div ref={aboutRef} className="section about">
         <AboutMe />
       </div>

@@ -5,8 +5,10 @@ import React from 'react';
 const ContactPage = () => {
   return (
     <div>
-    <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 50, color: 'white'}}>Socials</h1>
-    <p style={{color: '#75C3FB'}}>Feel free to reach out to me</p>
+    <h1 className="text-center" style={{ fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', fontSize: 50, color: 'white'}}>Contact</h1>
+    <div className="text-center my-5">
+    <hr style={{ display: 'inline-block', borderColor: 'white', width: '90%' }} />
+    </div>
     <div className='container'>
       <div className='row justify-content-center'>
         <div className='col-auto'>
@@ -29,7 +31,7 @@ const ContactPage = () => {
           </div>
         </div>
         <div className='col-auto'>
-          <div className='equalBox'>Linkdein
+          <div className='equalBox'>Linkedin
           <br/>
           <a href="https://www.linkedin.com/in/rishit-gupta-8623752b4/" target="_blank" rel="noopener noreferrer">
 

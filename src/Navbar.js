@@ -4,7 +4,7 @@ import './navbar.css'; // Import the navbar.css file
 const Navbar = ({ scrollToSection, aboutRef, projectsRef, contactRef }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div className="container">
+      <div className="container ms-3"> {/* Add margin-left utility class "ms-3" */}
         <a href="https://rishitg.vercel.app" className='navbar-brand'>
           <img src= './rg.png' alt="Rishit Gupta" style={{ maxWidth: '95%', maxHeight: '95px' }} />
         </a>
@@ -24,7 +24,7 @@ const Navbar = ({ scrollToSection, aboutRef, projectsRef, contactRef }) => {
           <div className="offcanvas-body">
             {/* Navigation Links */}
             <ul className="navbar-nav justify-content-center flex-grow-1 pe-5 ms-0">
-              <li className="nav-item">
+              <li className="nav-item mx-2">
                 <button className="nav-link active" aria-current="page" style={{ color: 'white', fontSize: '20px' }} onClick={() => scrollToSection(aboutRef)}>About</button>
               </li>
               <li className="nav-item mx-2">
