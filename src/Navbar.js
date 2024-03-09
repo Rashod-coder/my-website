@@ -23,7 +23,7 @@ const Navbar = ({ scrollToSection, aboutRef, projectsRef, contactRef }) => {
           {/* Offcanvas Body */}
           <div className="offcanvas-body">
             {/* Navigation Links */}
-            <ul className="navbar-nav justify-content-center flex-grow-1 pe-5 ms-0">
+            <ul className="navbar-nav justify-content-center flex-grow-1 pe-5 ms-5">
               <li className="nav-item mx-2">
                 <button className="nav-link active" aria-current="page" style={{ color: 'white', fontSize: '20px' }} onClick={() => scrollToSection(aboutRef)}>About</button>
               </li>

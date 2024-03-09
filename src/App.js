@@ -32,7 +32,7 @@ function App() {
             <div className='col-sm-12'>
             <h1 style={{ textAlign: 'center', color: '#ffffff', fontSize: 48, fontFamily: 'Open Sans, sans-serif', fontWeight: 'bold', marginTop: '-150px' }}>{displayText}</h1>
               </div>
-              <h2 style={{ textAlign: 'center' }}>deded</h2>
+              <p style={{ textAlign: 'center', color: '#ffffff', }}>I'm a Junior in High School currently, & I plan on majoring in aerospace. </p>
           </div>
         </div>
       <div ref={aboutRef} className="section about">
