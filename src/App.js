@@ -6,6 +6,7 @@ import './font.css';
 import Projects from './Projects';
 import AboutMe from './About';
 import Contact from './Contact';
+import Home from './Home'
 
 function App() {
   const aboutRef = useRef(null);
@@ -28,12 +29,8 @@ function App() {
     <div className="App">
       <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
       <div className='sectionHome home'>
-          <div className='row'>
-            <div className='col-sm-12'>
-            <h1 className="gradient-text">{displayText}</h1>
-              </div>
-              <p style={{ textAlign: 'center', color: '#ffffff', }}>I'm a Junior in High School currently, & I plan on majoring in aerospace. </p>
-          </div>
+        <Home/>
+          
         </div>
       <div ref={aboutRef} className="section about">
         <AboutMe />
