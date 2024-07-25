@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import './App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './font.css';
@@ -22,25 +21,19 @@ function App() {
     }
   };
 
-  // Set the displayText directly without typing animation
   const displayText = "Hi, I'm Rishit Gupta";
 
   return (
     <div className="App">
       <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
-      <div className='sectionHome home'>
-        <Home/>
-          
-        </div>
+      <Home/>
       <div ref={aboutRef} className="section about">
         <AboutMe />
       </div>
       <div ref={projectsRef} className="section projects">
         <Projects/>
       </div>
-      <div ref={contactRef} className="section contact">
-        <Contact/>
-      </div>
+      
       <Footer />
     </div>
   );

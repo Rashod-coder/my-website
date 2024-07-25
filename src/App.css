@@ -193,18 +193,14 @@ body {
 }
 
 .containerHome{
-  display: flexbox;
+  display: inline-flex;
   margin-top: -160px;
 }
 
 .gradient-text {
-  text-align: center;
-  font-size: 48px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  margin-top: -100px;
-  -webkit-background-clip: text; /* for Safari */
+  background: linear-gradient(45deg, #032b88, #73a0f5, #06b1d3);
+  -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; /* hide the text color */
-  background-image: linear-gradient(to right, #2a4fe3, #29b17f); /* specify the gradient colors */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  display: inline-block; /* Required for gradients to apply correctly in some cases */
 }

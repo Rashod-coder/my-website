@@ -1,32 +1,34 @@
-@media (max-width: 1000px) {
-    .offcanvas {
-      background-color: rgba(255, 255, 255, 0.15); /* Adjusted color value */
-      backdrop-filter: blur(10px);
-    }
-  }
-
-  
-  
- 
-  /* navbar.css */
-  .navbar-drark-bg-transparent {
-    background-color: rgba(47, 72, 88, 0) !important; 
-  }
-
+/* Ensure normal navbar style remains unchanged */
 .navbar {
-    position: absolute;
-    top: 0; /* Position it at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 2; /* Ensure it's above the banner */
-   
+  position: relative;
 }
 
-.navbar-toggler-icon {
-  color: rbed; /* Change the color to your desired color */
-}
-
+/* Offcanvas menu styles */
 .offcanvas {
-  right: 0;
+  width: 250px; /* Set width for the offcanvas menu */
 }
 
+.offcanvas-body {
+  padding: 20px; /* Add padding for offcanvas content */
+}
 
+.offcanvas-header .btn-close {
+  filter: invert(1); /* Change the close button color to white */
+}
+
+.navbar-nav {
+  flex-direction: column; /* Stack nav items vertically */
+}
+
+.nav-item {
+  text-align: center; /* Center text in nav items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+}
