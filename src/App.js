@@ -6,6 +6,7 @@ import Projects from './Projects';
 import AboutMe from './About';
 import Contact from './Contact';
 import Home from './Home'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const aboutRef = useRef(null);
@@ -21,7 +22,6 @@ function App() {
     }
   };
 
-  const displayText = "Hi, I'm Rishit Gupta";
 
   return (
     <div className="App">
@@ -35,6 +35,7 @@ function App() {
       </div>
       
       <Footer />
+      <Analytics />
     </div>
   );
 }
