@@ -20,43 +20,15 @@ body {
 }
 
 
-.home {
-  background-image: url('splash35.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-}
 
 
-.about {
-  background-color: #384572;
-  background-image: url('splash40.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 150vh;
-}
-.about h1{
-  padding-top: -10px;
-}
 
-.projects {
-  
-  background-image: url('splash40.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.contact {
-  
-  background-image: url('splash40.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 50vh;
-}
+
+
+
+
+
 
 
 
