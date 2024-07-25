@@ -11,7 +11,8 @@ const Home = () => {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center', // Center vertically
-        justifyContent: 'center' // Center horizontally
+        justifyContent: 'center', // Center horizontally
+        flexDirection: 'column' // Stack content vertically
       }}
     >
       <div className="container">
@@ -36,6 +37,16 @@ const Home = () => {
             >
               Hi, I'm Rishit Gupta.
             </h1>
+            <p
+              style={{
+                fontFamily: 'Open Sans, sans-serif',
+                fontSize: '1.5rem', // Adjust font size
+                color: '#555',
+                marginBottom: '20px' // Space below the paragraph
+              }}
+            >
+              I'm currently a rising senior at High School interested in majoring in Aerospace Engineering.
+            </p>
           </div>
           <div className="col-lg-6 text-center text-lg-right"
             style={{ 
@@ -60,6 +71,52 @@ const Home = () => {
               }} 
             />
           </div>
+        </div>
+        <div 
+          style={{
+            marginTop: '40px', // Space between image and buttons
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '20px' // Space between buttons
+          }}
+        >
+          <a
+            href="#footer"
+            style={{
+              display: 'inline-block',
+              padding: '10px 20px',
+              fontSize: '26px',
+              fontWeight: 'bold',
+              color: '#fff',
+              backgroundColor: '#333',
+              borderRadius: '5px',
+              textDecoration: 'none',
+              transition: 'background-color 0.3s ease',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#555'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#333'}
+          >
+            Contact
+          </a>
+          <a
+            href="#about"
+            style={{
+              display: 'inline-block',
+              padding: '10px 20px',
+              fontSize: '26px',
+              fontWeight: 'bold',
+              color: '#fff',
+              backgroundColor: '#333',
+              borderRadius: '5px',
+              textDecoration: 'none',
+              transition: 'background-color 0.3s ease',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#555'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#333'}
+          >
+            About Me
+          </a>
+          
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer = () => {
   return (
     <div style={{ background: 'black', color: 'white', minHeight: '40vh', padding: '20px' }}>
+        <h2 style={{textDecoration:'underline'}}>Contact</h2>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-4'>
@@ -38,7 +39,7 @@ const Footer = () => {
         </div>
         <div className='row align-items-center'>
           <div className='col-lg-4 text-center text-lg-start'>
-            <img className='mb-4' src='./rg.png' alt="Rishit Gupta" style={{ maxWidth: '300px', maxHeight: '100%' }} />
+            <img className='mb-4 mt-4' src='./rg.png' alt="Rishit Gupta" style={{ maxWidth: '300px', maxHeight: '100%' }} />
           </div>
           <div className='col-lg-4 text-center'>
             <ul className='list-unstyled mt-'>
@@ -50,7 +51,7 @@ const Footer = () => {
         </div>
         <div className='row'>
           <div className='col-12 text-center mt-4'>
-            <p className='mb-0'>&copy; {new Date().getFullYear()} Rishit Gupta. All rights reserved. | Website Designed by Rishit Gupta</p>
+            <p className='mb-0'>&copy; {new Date().getFullYear()} Rishit Gupta | Website Designed by Rishit Gupta</p>
           </div>
         </div>
       </div>
