@@ -45,7 +45,7 @@ const Home = () => {
                 marginBottom: '20px' // Space below the paragraph
               }}
             >
-              I'm currently a rising senior at High School interested in majoring in Aerospace Engineering.
+              I'm currently a senior High School interested in majoring in Aerospace Engineering.
             </p>
           </div>
           <div className="col-lg-6 text-center text-lg-right"

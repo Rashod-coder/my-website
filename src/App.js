@@ -6,6 +6,8 @@ import Projects from './Projects';
 import AboutMe from './About';
 import Home from './Home'
 import { Analytics } from "@vercel/analytics/react"
+import info from './otherProjects'
+import OtherProjects from './otherProjects';
 
 function App() {
   
@@ -24,6 +26,9 @@ function App() {
       </div>
       <div id='projects'>
         <Projects/>
+      </div>
+      <div>
+        <OtherProjects/>
       </div>
       <div id='footer'>
       <Footer />
