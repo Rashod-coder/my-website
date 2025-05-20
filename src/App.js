@@ -27,9 +27,6 @@ function App() {
       <div id='projects'>
         <Projects/>
       </div>
-      <div>
-        <OtherProjects/>
-      </div>
       <div id='footer'>
       <Footer />
 

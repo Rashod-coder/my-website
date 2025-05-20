@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
 import techImage from './Tech.jpg'; // Adjust the path accordingly
-import coding from './icon-coding-logo-Q976Kx7-600.jpg'
-import airplane from './Tpwmmfo3CiAJvwd4vXGzvn-1200-80.jpg'
-import fresh from './Fresh.jpg'
+import Marble from './Screenshot 2025-05-19 at 4.22.23 PM.png'
+import Car from './Screenshot 2025-05-19 at 4.29.22 PM.png'
+import Glider from './Screenshot 2025-05-19 at 4.42.55 PM.png'
+import airplane from './Screenshot 2025-05-19 at 5.01.14 PM.png'
+import Airfoil from './Screenshot 2025-05-19 at 4.49.49 PM.png'
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
 
 const ProjectsPage = () => {
@@ -29,7 +31,7 @@ const ProjectsPage = () => {
               TechCore is a nonprofit initiative aimed at reducing the digital divide in education through technology donations and programming classes. 
               We strive to enhance access to technology for underserved schools, empowering students with vital coding skills and resources for their future.
             </p>
-            <a href="https://tech-core.xyz" target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-4" style={{ marginTop: '10px' }}>
+            <a href="https://techcore-rishits-projects-9b0c81d8.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-4" style={{ marginTop: '10px' }}>
               Visit TechCore
             </a>
           </div>
@@ -37,7 +39,7 @@ const ProjectsPage = () => {
           <div className="col-md-6 d-flex justify-content-center"> {/* Center image on smaller screens */}
             <div className="card shadow mb-4" style={{ borderRadius: '8px', maxWidth: '400px' }}>
               <img 
-                src={coding} 
+                src={Marble} 
                 alt="TechCore Project" 
                 className="card-img-top" 
                 style={{ borderRadius: '8px 8px 0 0', height: 'auto', maxWidth: '100%', maxHeight: '400px' }} 
@@ -45,19 +47,77 @@ const ProjectsPage = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Website Solutions For Clubs</h2>
+            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Marble Sorter - Honors Principles of Engineering </h2>
             <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.2rem', lineHeight: '1.5' }}>
-              I created tailored websites for clubs and organizations, to help enhance their community outreach and showcasing their missions. My solutions 
-              streamline club managment with a seamless UI dashboard, allowing members to see overall statistics of the club, manage team members, carry out club
-              tasks efficently. Visit the website(s) below for some past works I've done. 
+              This project involved the design and contruction of a marble sorting machine using vex parts and 3D printed parts. The machine was designed to sort marbles based on their color, using a combination of sensors and mechanical components. I mainly learned how to CAD complicated parts as well improving problem solving skills, and improving group project skills, such as communication. 
             </p>
-            <a href="https://sportinjurybio.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: '10px', marginRight: '10px' }}>
-              Visit Sport Injury Bio
+            <a href="https://docs.google.com/document/d/1OVU7jNyaU-6NkFlWGgw5PV7oJr_DraLtm4HFNrdJovY/edit?usp=sharing" target="_blank" rel="noopener noreferrer"   className="btn btn-primary mt-2 me-2 mb-4"
+ style={{ marginTop: '10px', marginRight: '10px' }}>
+              Read the Report
             </a>
-            <a href="https://fremont-youth.vercel.app/team" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: '10px' }}>
-              Visit Fremont Youth
-            </a>
+            
 
+          </div>
+          <hr/>
+          <div className="col-md-6 d-flex justify-content-center"> {/* Center image on smaller screens */}
+            <div className="card shadow mb-4" style={{ borderRadius: '8px', maxWidth: '400px' }}>
+              <img 
+                src={Car} 
+                alt="TechCore Project" 
+                className="card-img-top" 
+                style={{ borderRadius: '8px 8px 0 0', height: 'auto', maxWidth: '100%', maxHeight: '500px' }} 
+              />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Drift Car - Honors Principles of Engineering</h2>
+            <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.2rem', lineHeight: '1.5' }}>
+              Our team was chosen to design and construct a project from PLTW curriculum and we choose a car, the point of the car was for us to be able to make it drift. Hence in the design we put 2 fixed tires in the back and 360 degree turning radius for the front tire to help it drift. In this project I mainly learned how to work with VEX parts more and how to use the VEX programming app in Python. 
+            </p>
+            <a href="https://docs.google.com/document/d/101oUAKx9IpXtgbuYCLG4Z2a6eqYulIDh2I6rsnvT3s4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-4" style={{ marginTop: '10px', marginRight: '10px' }}>
+              Read the Report
+            </a>
+            
+          </div>
+          <hr/>
+          <div className="col-md-6 d-flex justify-content-center"> {/* Center image on smaller screens */}
+            <div className="card shadow mb-4" style={{ borderRadius: '8px', maxWidth: '400px' }}>
+              <img 
+                src={Glider} 
+                alt="TechCore Project" 
+                className="card-img-top" 
+                style={{ borderRadius: '8px 8px 0 0', height: 'auto', maxWidth: '100%', maxHeight: '500px' }} 
+              />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Glider - Honors Aerospace Engineering</h2>
+            <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.2rem', lineHeight: '1.5' }}>
+            The purpose of this project is to apply engineering principles to design, build and test a functional glider using materials like balsa wood, basswood, glue, and clay. Our goal was to build a fully functional aerodynamic glider that can sustain a good airtime. Overall in our best iteration we were able to average around 3.5 seconds of airtime travelling around 600-800 meters. I learnt a lot about aerodynamics espically  how center of mass affects flight time, this learning affected how me and my teamate placed our wing on the glider and how much clay to add on the nose of the plane.              </p>
+            <a href="https://docs.google.com/document/d/1F3Ss3c2TgLZND4xHHb-yRulNr3W4iFmG6AcLjBNZG4A/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-4" style={{ marginTop: '10px', marginRight: '10px' }}>
+              Read the Report
+            </a>
+            
+          </div>
+          <hr/>
+          <div className="col-md-6 d-flex justify-content-center"> {/* Center image on smaller screens */}
+            <div className="card shadow mb-4" style={{ borderRadius: '8px', maxWidth: '400px' }}>
+              <img 
+                src={Airfoil} 
+                alt="TechCore Project" 
+                className="card-img-top" 
+                style={{ borderRadius: '8px 8px 0 0', height: 'auto', maxWidth: '100%', maxHeight: '500px' }} 
+              />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Airfoil - Honors Aerospace Engineering</h2>
+            <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.2rem', lineHeight: '1.5' }}>
+            This project we were tasked to create a airfoil that would be efficent in providing a lot of lift while also having low drag. We were provided with using NASA's Airfoil Simulator which would help us optimize lift and drag. I applied aerodynamic skills in creating a efficent airfoul as well as using google sheets to streamline my calculations to determine total lift and drag. We had a criteria of meeting a required amount of lift and a maximum amount of drag in our airfoil design. In this project I learned as an aircraft designer it's super important to design efficent airfoils because it's cost effective as the aircraft won't be burning up a lot of fuel but also less carbon emissions, and I also learned specific factors that affect drag and lift such as angle of attack.    </p>
+            <a href="https://docs.google.com/document/d/15fJNE1x-6hbJI_OTnA0u0-cLrolpfge7jbtc2FQf0kI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-4" style={{ marginTop: '10px', marginRight: '10px' }}>
+              Read the Report
+            </a>
+            
           </div>
           <hr/>
           <div className="col-md-6 d-flex justify-content-center"> {/* Center image on smaller screens */}
@@ -71,7 +131,7 @@ const ProjectsPage = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Research paper under a UT Austin Scientist</h2>
+            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Research paper about Nuclear Fission powering our planes</h2>
             <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.2rem', lineHeight: '1.5' }}>
               My researcher paper explores the possiblities of integating nuclear fission reactors into aerospace applicatons. It examines the interactions between various materials of the reactor using a Software simulation tool OpenMc, to determine
               the feasbility and saftey of such integration. The findings revealed that it is indeed possible to incorporate nuclear fission technology into aerospace designs, with further and extensive research being conducted in this field this could become a reality.
@@ -81,31 +141,6 @@ const ProjectsPage = () => {
               Read the paper!
             </a>
 
-          </div>
-          <hr/>
-          <div className="col-md-6 d-flex justify-content-center"> {/* Center image on smaller screens */}
-            <div className="card shadow mb-4" style={{ borderRadius: '8px', maxWidth: '400px' }}>
-              <img 
-                src={fresh} 
-                alt="TechCore Project" 
-                className="card-img-top" 
-                style={{ borderRadius: '8px 8px 0 0', height: 'auto', maxWidth: '100%', maxHeight: '500px' }} 
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2.5rem', fontWeight: '600' }}>Fresh Market Hub - Hackathon Project</h2>
-            <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.2rem', lineHeight: '1.5' }}>
-              Fresh For All is a online digital farmers market, designed to reduce food waste and promote sustabinlity. By connecting local farmers and residents, the platform
-              allows people to sell surplus produce grown in their backyards, fostering community engagement, and encouraging less food waste, preventing this home grown produce from going to waste. As well as helping farmers gain profits by directly selling on this site.
-              <p style={{fontWeight: 'bold'}}>Won Best Hack award  </p>
-            </p>
-            <a href="https://fresh-produce.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-4" style={{ marginTop: '10px', marginRight: '10px' }}>
-              View the prototype
-            </a>
-            <a href="https://devpost.com/software/fresh-for-all" target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-4" style={{ marginTop: '10px' }}>
-              View the devpost
-            </a>
           </div>
         </div>
         <hr/>

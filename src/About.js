@@ -110,9 +110,11 @@ const AboutMe = () => {
                 My love for nature and traveling exploring the unique wonders around the world, has deepend my appreciation for the 
                 exhilarating beauty of the world. However with each travel I noticed that aerospace industry contrivutes significantly to carbon
                 emissions, impacting the wonders of the world. This propels me to innovate sustainable propulsion systems, designs for the aerospace industry,
-                driving my passion to protect our planet for future generations. 
+                driving my passion to protect our planet for future generations. Aerospace Engineers mainly create and design aircraft systems such as the body, wings or engines (propulsion). 
                 <br/>
                 Additionally, I have a fascination with planes and enjoy watching them as they soar the skies. Admiring the design, espically the engines that power them. 
+                <br/>
+                One of my experiences in this was researching about leveraging nuclear fission to power our aircrafts in the future. More about this can be found in the projects section. 
               </Typography>
             </div>
           </Fade>

@@ -34,7 +34,6 @@ const OtherProjects = () => {
           </div>
         </section>
 
-        {/* Mini Projects / Work Experience Section */}
         <section className="mt-4"style={{ borderBottom: '2px solid white', paddingBottom: '20px' }}>
           <h2 className='text-center' style={{ fontWeight: 'bold' }}>Mini Projects / Work Experience</h2>
           <div className="row">
